@@ -30,10 +30,15 @@ The **LLM Council** is a native implementation for **Google Antigravity**. It fu
 
 ### 🚀 Key Features
 - **100% Antigravity Native**: No external APIs or OpenRouter needed.
-- **3-Stage Protocol**:
-    1. **Collection**: Insights from Gemini Flash 3, Pro 3.1 Low, and Sonnet 4.6.
-    2. **Review**: Anonymous peer ranking to eliminate bias.
-    3. **Synthesis**: Final consolidation by Gemini Pro 3.1 High (Chairman).
+### How it Works (Mandatory Protocol)
+The skill uses a 3-stage process and **always** provides:
+1.  **Executive Summary**: A concise, actionable solution.
+2.  **Detailed Reasoning**: A breakdown of the deliberation stages.
+
+#### Stages:
+1.  **Stage 1: Collection**. Multiple agents (Gemini Flash 3, Pro 3.1 Low, Sonnet 4.6) provide initial answers.
+2.  **Stage 2: Ranking**. The agents evaluate and rank each other's responses anonimized.
+3.  **Stage 3: Synthesis**. A Chairman agent (Gemini Pro 3.1 High) provides the final consolidated answer.
 
 ---
 
