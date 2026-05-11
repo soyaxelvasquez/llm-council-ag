@@ -2,6 +2,24 @@
 
 ![llmcouncil](header.jpg)
 
+A 3-stage deliberation system where multiple LLMs collaboratively answer user questions. This project is **100% Antigravity Compatible**.
+
+## 🚀 Antigravity Skill Integration
+You can use this project directly as a "Skill" in your Antigravity agent.
+
+### Installation
+1.  **Clone the repo**: `git clone <your-repo-url>`
+2.  **Register the Skill**: Copy the `SKILL.md` file to your Antigravity skills directory (usually `~/.agents/skills/llm-council/SKILL.md`).
+3.  **Use it**: Ask Antigravity to "Deliberate" or use the `/deliberate` command in the chat.
+
+### How it Works
+The skill uses a 3-stage process using your available Antigravity tiers:
+1.  **Stage 1: Collection**. Multiple agents (Gemini Flash 3, Pro 3.1 Low, Sonnet 4.6) provide initial answers.
+2.  **Stage 2: Ranking**. The agents evaluate and rank each other's responses anonimized.
+3.  **Stage 3: Synthesis**. A Chairman agent (Gemini Pro 3.1 High) provides the final consolidated answer.
+
+---
+
 The idea of this repo is that instead of asking a question to your favorite LLM provider (e.g. OpenAI GPT 5.1, Google Gemini 3.0 Pro, Anthropic Claude Sonnet 4.5, xAI Grok 4, eg.c), you can group them into your "LLM Council". This repo is a simple, local web app that essentially looks like ChatGPT except it uses OpenRouter to send your query to multiple LLMs, it then asks them to review and rank each other's work, and finally a Chairman LLM produces the final response.
 
 In a bit more detail, here is what happens when you submit a query:
